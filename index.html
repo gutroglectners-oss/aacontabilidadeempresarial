@@ -1,0 +1,1827 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A7 Contabilidade | Contabilidade Empresarial</title>
+
+<meta name="description"
+content="A7 Contabilidade Empresarial LTDA — soluções contábeis, tributárias e empresariais em Ariquemes - RO. CNPJ 36.504.052/0001-42.">
+
+<meta name="keywords"
+content="A7 Contabilidade, contabilidade Ariquemes, contador Ariquemes, contabilidade RO, CRC RO, 36504052000142">
+
+<meta name="theme-color" content="#0b4038">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7f6;
+    color:#1b2925;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid #e5ebe8;
+}
+
+.navbar{
+    height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-icon{
+    width:48px;
+    height:48px;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0b4038;
+    color:#d8b56c;
+    font-size:19px;
+    font-weight:900;
+}
+
+.logo-text strong{
+    display:block;
+    color:#0b4038;
+    font-size:18px;
+}
+
+.logo-text span{
+    font-size:10px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:#777;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+nav a{
+    font-size:14px;
+    font-weight:bold;
+    color:#34433e;
+}
+
+nav a:hover{
+    color:#b38c48;
+}
+
+.btn-nav{
+    background:#0b4038;
+    color:white!important;
+    padding:11px 18px;
+    border-radius:9px;
+}
+
+.menu-btn{
+    display:none;
+    border:0;
+    background:none;
+    font-size:28px;
+    color:#0b4038;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:780px;
+    padding:150px 0 90px;
+    display:flex;
+    align-items:center;
+
+    background:
+    radial-gradient(circle at 85% 15%,rgba(216,181,108,.24),transparent 28%),
+    linear-gradient(135deg,#fafcfb,#eaf1ed);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:70px;
+    align-items:center;
+}
+
+.tag{
+    display:inline-block;
+    color:#b38c48;
+    font-weight:900;
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    color:#0b4038;
+    font-size:clamp(44px,6vw,72px);
+    line-height:1;
+    letter-spacing:-3px;
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:#b38c48;
+}
+
+.hero-text{
+    max-width:650px;
+    color:#65736e;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.btn{
+    padding:14px 22px;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:bold;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    transition:.2s;
+}
+
+.btn-primary{
+    background:#0b4038;
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#062d27;
+    transform:translateY(-2px);
+}
+
+.btn-secondary{
+    background:white;
+    color:#0b4038;
+    border:1px solid #dfe7e3;
+}
+
+.btn-secondary:hover{
+    transform:translateY(-2px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+/* ================= HERO CARD ================= */
+
+.company-card{
+    background:linear-gradient(145deg,#0b4038,#0d5b4d);
+    color:white;
+    border-radius:28px;
+    padding:38px;
+    box-shadow:0 30px 70px rgba(11,64,56,.24);
+}
+
+.company-card small{
+    color:#dfc98f;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:10px;
+    font-weight:bold;
+}
+
+.company-card h2{
+    font-size:30px;
+    margin:8px 0 25px;
+}
+
+.card-item{
+    border-bottom:1px solid rgba(255,255,255,.13);
+    padding:14px 0;
+}
+
+.card-item:last-child{
+    border-bottom:0;
+}
+
+.card-item span{
+    display:block;
+    color:rgba(255,255,255,.55);
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.card-item strong{
+    font-size:14px;
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    max-width:700px;
+    margin-bottom:50px;
+}
+
+.section-title small{
+    color:#b38c48;
+    font-size:11px;
+    font-weight:900;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section-title h2{
+    color:#0b4038;
+    font-size:clamp(34px,4vw,52px);
+    line-height:1.05;
+    letter-spacing:-1.5px;
+    margin:12px 0;
+}
+
+.section-title p{
+    color:#697772;
+}
+
+/* ================= SOBRE ================= */
+
+.about{
+    background:white;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:.85fr 1.15fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about-box{
+    min-height:430px;
+    border-radius:28px;
+    padding:40px;
+    color:white;
+    background:linear-gradient(145deg,#0b4038,#0d5b4d);
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+.big-logo{
+    color:#dfc98f;
+    font-size:90px;
+    line-height:1;
+    font-weight:900;
+}
+
+.about-box h3{
+    font-size:26px;
+    margin-top:15px;
+}
+
+.about-box p{
+    color:rgba(255,255,255,.65);
+}
+
+.about-content p{
+    color:#697772;
+    margin-bottom:18px;
+}
+
+.checks{
+    display:grid;
+    gap:12px;
+    margin-top:25px;
+}
+
+.check{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:bold;
+}
+
+.check i{
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    background:#e8f0ed;
+    color:#0b4038;
+    font-style:normal;
+}
+
+/* ================= SERVIÇOS ================= */
+
+.services{
+    background:#f5f7f6;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.service{
+    background:white;
+    border:1px solid #e1e8e5;
+    border-radius:20px;
+    padding:30px;
+    transition:.25s;
+}
+
+.service:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 50px rgba(11,64,56,.10);
+}
+
+.service-icon{
+    width:52px;
+    height:52px;
+    border-radius:14px;
+    background:#eaf1ee;
+    display:grid;
+    place-items:center;
+    color:#0b4038;
+    font-weight:900;
+    font-size:20px;
+    margin-bottom:18px;
+}
+
+.service h3{
+    color:#0b4038;
+    margin-bottom:8px;
+}
+
+.service p{
+    color:#697772;
+    font-size:14px;
+}
+
+/* ================= CRC ================= */
+
+.crc-section{
+    background:white;
+}
+
+.crc-card{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 20px 60px rgba(11,64,56,.12);
+}
+
+.crc-main{
+    background:linear-gradient(145deg,#0b4038,#0d5b4d);
+    color:white;
+    padding:50px;
+}
+
+.crc-main small{
+    color:#dfc98f;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:10px;
+    font-weight:bold;
+}
+
+.crc-main h2{
+    font-size:42px;
+    margin-top:8px;
+}
+
+.crc-number{
+    color:#dfc98f;
+    font-size:42px;
+    font-weight:900;
+    margin-top:35px;
+}
+
+.crc-status{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:12px;
+    padding:7px 13px;
+    border-radius:30px;
+    background:rgba(255,255,255,.1);
+    font-size:12px;
+    font-weight:bold;
+}
+
+.status-dot{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:#49d17d;
+}
+
+.crc-info{
+    padding:50px;
+    background:white;
+}
+
+.crc-row{
+    padding:17px 0;
+    border-bottom:1px solid #e5ebe8;
+}
+
+.crc-row:last-child{
+    border-bottom:0;
+}
+
+.crc-row span{
+    display:block;
+    color:#75827d;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:1.4px;
+}
+
+.crc-row strong{
+    color:#0b4038;
+}
+
+/* ================= DADOS ================= */
+
+.data-section{
+    background:#f5f7f6;
+}
+
+.data-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.data-card{
+    background:white;
+    border:1px solid #e2e9e6;
+    border-radius:20px;
+    padding:30px;
+}
+
+.data-row{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    padding:15px 0;
+    border-bottom:1px solid #e6ece9;
+}
+
+.data-row:last-child{
+    border-bottom:0;
+}
+
+.data-row span{
+    color:#6d7975;
+    font-size:13px;
+}
+
+.data-row strong{
+    color:#0b4038;
+    font-size:13px;
+    text-align:right;
+}
+
+/* ================= CONTATO ================= */
+
+.contact{
+    background:white;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:25px;
+}
+
+.contact-box,
+.form-box{
+    padding:35px;
+    border:1px solid #e2e9e6;
+    border-radius:20px;
+}
+
+.contact-item{
+    display:flex;
+    gap:14px;
+    padding:17px 0;
+    border-bottom:1px solid #e6ece9;
+}
+
+.contact-item:last-child{
+    border-bottom:0;
+}
+
+.contact-icon{
+    width:43px;
+    height:43px;
+    flex:0 0 43px;
+    border-radius:11px;
+    background:#eaf1ee;
+    display:grid;
+    place-items:center;
+    color:#0b4038;
+    font-weight:bold;
+}
+
+.contact-item small{
+    display:block;
+    color:#76817d;
+    font-size:10px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.contact-item strong{
+    display:block;
+    color:#0b4038;
+    font-size:14px;
+}
+
+.form-box{
+    background:#f5f7f6;
+}
+
+form{
+    display:grid;
+    gap:15px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.field{
+    display:grid;
+    gap:6px;
+}
+
+label{
+    font-size:12px;
+    color:#0b4038;
+    font-weight:bold;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:13px 14px;
+    border:1px solid #dfe7e3;
+    border-radius:10px;
+    background:white;
+    outline:none;
+}
+
+textarea{
+    min-height:130px;
+    resize:vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    border-color:#b38c48;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#041f1b;
+    color:white;
+    padding:60px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr;
+    gap:50px;
+    padding-bottom:40px;
+}
+
+footer .logo-text strong{
+    color:white;
+}
+
+footer p,
+footer li{
+    color:rgba(255,255,255,.55);
+    font-size:13px;
+}
+
+footer h4{
+    color:#dfc98f;
+    margin-bottom:15px;
+}
+
+footer ul{
+    list-style:none;
+    display:grid;
+    gap:8px;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.1);
+    padding-top:20px;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    color:rgba(255,255,255,.4);
+    font-size:11px;
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25d366;
+    color:white;
+    display:grid;
+    place-items:center;
+    font-size:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    z-index:999;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media(max-width:950px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    nav ul{
+        display:none;
+        position:absolute;
+        left:0;
+        right:0;
+        top:78px;
+        background:white;
+        padding:25px;
+        flex-direction:column;
+        align-items:flex-start;
+        border-bottom:1px solid #e5ebe8;
+    }
+
+    nav ul.active{
+        display:flex;
+    }
+
+    .hero-grid,
+    .about-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .crc-card{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:650px){
+
+    section{
+        padding:70px 0;
+    }
+
+    .hero{
+        padding-top:130px;
+    }
+
+    .hero h1{
+        font-size:44px;
+        letter-spacing:-2px;
+    }
+
+    .services-grid,
+    .data-grid,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .company-card,
+    .about-box,
+    .crc-main,
+    .crc-info,
+    .contact-box,
+    .form-box,
+    .data-card{
+        padding:27px;
+    }
+
+    .data-row{
+        flex-direction:column;
+        gap:4px;
+    }
+
+    .data-row strong{
+        text-align:left;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="container navbar">
+
+<a href="#inicio" class="logo">
+
+<div class="logo-icon">
+A7
+</div>
+
+<div class="logo-text">
+<strong>A7 Contabilidade</strong>
+<span>Contabilidade Empresarial</span>
+</div>
+
+</a>
+
+<button class="menu-btn" id="menuBtn">
+☰
+</button>
+
+<nav>
+
+<ul id="menu">
+
+<li><a href="#inicio">Início</a></li>
+<li><a href="#empresa">Empresa</a></li>
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#crc">CRC</a></li>
+<li><a href="#contato">Contato</a></li>
+
+<li>
+<a class="btn-nav"
+href="https://wa.me/5569993435588"
+target="_blank">
+Fale conosco
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="inicio">
+
+<div class="container hero-grid">
+
+<div>
+
+<span class="tag">
+Contabilidade empresarial
+</span>
+
+<h1>
+Contabilidade que transforma
+<span>números em decisões.</span>
+</h1>
+
+<p class="hero-text">
+Soluções contábeis, tributárias e empresariais
+para ajudar sua empresa a crescer com
+organização, clareza e segurança.
+</p>
+
+<div class="buttons">
+
+<a class="btn btn-primary"
+href="https://wa.me/5569993435588"
+target="_blank">
+Falar pelo WhatsApp →
+</a>
+
+<a class="btn btn-secondary"
+href="#servicos">
+Conhecer serviços
+</a>
+
+</div>
+
+</div>
+
+
+<div class="company-card">
+
+<small>
+Dados empresariais
+</small>
+
+<h2>
+A7 Contabilidade
+</h2>
+
+<div class="card-item">
+<span>CNPJ</span>
+<strong>36.504.052/0001-42</strong>
+</div>
+
+<div class="card-item">
+<span>Razão Social</span>
+<strong>A7 Contabilidade Empresarial LTDA</strong>
+</div>
+
+<div class="card-item">
+<span>Situação</span>
+<strong>ATIVA</strong>
+</div>
+
+<div class="card-item">
+<span>Data de abertura</span>
+<strong>28/02/2020</strong>
+</div>
+
+<div class="card-item">
+<span>Localização</span>
+<strong>Ariquemes — RO</strong>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= EMPRESA ================= -->
+
+<section class="about" id="empresa">
+
+<div class="container about-grid">
+
+<div class="about-box">
+
+<div class="big-logo">
+A7
+</div>
+
+<h3>
+Visão empresarial para sua contabilidade
+</h3>
+
+<p>
+Contabilidade organizada para apoiar
+as decisões do seu negócio.
+</p>
+
+</div>
+
+
+<div class="about-content">
+
+<div class="section-title">
+
+<small>
+Sobre a empresa
+</small>
+
+<h2>
+Contabilidade com foco no seu negócio.
+</h2>
+
+<p>
+A A7 Contabilidade Empresarial LTDA atua
+no segmento de atividades de contabilidade,
+com sede em Ariquemes, Rondônia.
+</p>
+
+</div>
+
+<p>
+A empresa possui como atividade principal
+as atividades de contabilidade e também
+atua nas áreas de consultoria e auditoria
+contábil e tributária e treinamento em
+desenvolvimento profissional e gerencial.
+</p>
+
+<div class="checks">
+
+<div class="check">
+<i>✓</i>
+Contabilidade empresarial
+</div>
+
+<div class="check">
+<i>✓</i>
+Consultoria contábil e tributária
+</div>
+
+<div class="check">
+<i>✓</i>
+Auditoria contábil
+</div>
+
+<div class="check">
+<i>✓</i>
+Desenvolvimento profissional e gerencial
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= SERVIÇOS ================= -->
+
+<section class="services" id="servicos">
+
+<div class="container">
+
+<div class="section-title">
+
+<small>
+Serviços
+</small>
+
+<h2>
+Soluções para sua empresa.
+</h2>
+
+<p>
+Serviços alinhados às atividades econômicas
+da A7 Contabilidade.
+</p>
+
+</div>
+
+
+<div class="services-grid">
+
+<div class="service">
+
+<div class="service-icon">
+▣
+</div>
+
+<h3>
+Contabilidade
+</h3>
+
+<p>
+Organização e acompanhamento das informações
+contábeis da empresa.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+%
+</div>
+
+<h3>
+Consultoria Tributária
+</h3>
+
+<p>
+Orientação relacionada às questões contábeis,
+fiscais e tributárias.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+✓
+</div>
+
+<h3>
+Auditoria Contábil
+</h3>
+
+<p>
+Análise das informações contábeis e tributárias
+para apoiar controles empresariais.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+R$
+</div>
+
+<h3>
+Assessoria Empresarial
+</h3>
+
+<p>
+Apoio para organização e acompanhamento
+das necessidades do negócio.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
++
+</div>
+
+<h3>
+Regularização
+</h3>
+
+<p>
+Apoio em demandas relacionadas à rotina
+e regularização empresarial.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+★
+</div>
+
+<h3>
+Treinamento
+</h3>
+
+<p>
+Treinamento em desenvolvimento profissional
+e gerencial.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CRC ================= -->
+
+<section class="crc-section" id="crc">
+
+<div class="container">
+
+<div class="section-title">
+
+<small>
+Registro profissional
+</small>
+
+<h2>
+Registro CRC
+</h2>
+
+<p>
+Informação profissional apresentada
+no site institucional.
+</p>
+
+</div>
+
+
+<div class="crc-card">
+
+<div class="crc-main">
+
+<small>
+Conselho Regional de Contabilidade
+</small>
+
+<h2>
+CRC-RO
+</h2>
+
+<p>
+Registro profissional
+</p>
+
+<div class="crc-number">
+RO-000755/O
+</div>
+
+<div class="crc-status">
+
+<span class="status-dot"></span>
+
+ATIVO
+
+</div>
+
+</div>
+
+
+<div class="crc-info">
+
+<div class="crc-row">
+
+<span>
+Número do registro
+</span>
+
+<strong>
+RO-000755/O
+</strong>
+
+</div>
+
+
+<div class="crc-row">
+
+<span>
+Conselho
+</span>
+
+<strong>
+CRC-RO
+</strong>
+
+</div>
+
+
+<div class="crc-row">
+
+<span>
+Tipo
+</span>
+
+<strong>
+ORIGINÁRIO
+</strong>
+
+</div>
+
+
+<div class="crc-row">
+
+<span>
+Situação
+</span>
+
+<strong>
+ATIVO
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= DADOS ================= -->
+
+<section class="data-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<small>
+Dados cadastrais
+</small>
+
+<h2>
+Informações da empresa
+</h2>
+
+</div>
+
+
+<div class="data-grid">
+
+<div class="data-card">
+
+<div class="data-row">
+<span>Razão Social</span>
+<strong>A7 Contabilidade Empresarial LTDA</strong>
+</div>
+
+<div class="data-row">
+<span>Nome Fantasia</span>
+<strong>A7 Contabilidade</strong>
+</div>
+
+<div class="data-row">
+<span>CNPJ</span>
+<strong>36.504.052/0001-42</strong>
+</div>
+
+<div class="data-row">
+<span>Natureza Jurídica</span>
+<strong>Sociedade Empresária Limitada</strong>
+</div>
+
+<div class="data-row">
+<span>Tipo</span>
+<strong>Matriz</strong>
+</div>
+
+</div>
+
+
+<div class="data-card">
+
+<div class="data-row">
+<span>Situação</span>
+<strong>ATIVA</strong>
+</div>
+
+<div class="data-row">
+<span>Abertura</span>
+<strong>28/02/2020</strong>
+</div>
+
+<div class="data-row">
+<span>Porte</span>
+<strong>Microempresa — ME</strong>
+</div>
+
+<div class="data-row">
+<span>Capital Social</span>
+<strong>R$ 10.000,00</strong>
+</div>
+
+<div class="data-row">
+<span>Simples Nacional</span>
+<strong>OPTANTE</strong>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTATO ================= -->
+
+<section class="contact" id="contato">
+
+<div class="container">
+
+<div class="section-title">
+
+<small>
+Contato
+</small>
+
+<h2>
+Fale com a A7 Contabilidade.
+</h2>
+
+<p>
+Entre em contato para conhecer os serviços
+disponíveis para sua empresa.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-box">
+
+<div class="contact-item">
+
+<div class="contact-icon">
+⌂
+</div>
+
+<div>
+
+<small>
+Endereço
+</small>
+
+<strong>
+Rua Pioneiro André Ribeiro, 1600 — Sala 01<br>
+Setor 02 — Ariquemes/RO<br>
+CEP 76873-224
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+☎
+</div>
+
+<div>
+
+<small>
+WhatsApp
+</small>
+
+<strong>
+(69) 99343-5588
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+@
+</div>
+
+<div>
+
+<small>
+E-mail
+</small>
+
+<strong>
+a7contabilidadedigital@gmail.com
+</strong>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+◎
+</div>
+
+<div>
+
+<small>
+Localização
+</small>
+
+<strong>
+Ariquemes — Rondônia
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="form-box">
+
+<form id="contactForm">
+
+<div class="form-row">
+
+<div class="field">
+
+<label>
+Nome
+</label>
+
+<input
+id="nome"
+required
+placeholder="Seu nome">
+
+</div>
+
+
+<div class="field">
+
+<label>
+WhatsApp
+</label>
+
+<input
+id="telefone"
+required
+placeholder="(69) 99999-9999">
+
+</div>
+
+</div>
+
+
+<div class="field">
+
+<label>
+E-mail
+</label>
+
+<input
+id="email"
+type="email"
+placeholder="seu@email.com">
+
+</div>
+
+
+<div class="field">
+
+<label>
+Assunto
+</label>
+
+<select id="assunto">
+
+<option value="">
+Selecione
+</option>
+
+<option>
+Contabilidade
+</option>
+
+<option>
+Consultoria tributária
+</option>
+
+<option>
+Auditoria
+</option>
+
+<option>
+Treinamento
+</option>
+
+<option>
+Outros
+</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Mensagem
+</label>
+
+<textarea
+id="mensagem"
+placeholder="Como podemos ajudar?">
+</textarea>
+
+</div>
+
+
+<button
+class="btn btn-primary"
+type="submit">
+
+Enviar pelo WhatsApp →
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<div class="logo">
+
+<div class="logo-icon">
+A7
+</div>
+
+<div class="logo-text">
+
+<strong>
+A7 Contabilidade
+</strong>
+
+<span>
+Contabilidade Empresarial
+</span>
+
+</div>
+
+</div>
+
+<p>
+A7 Contabilidade Empresarial LTDA<br>
+CNPJ 36.504.052/0001-42
+</p>
+
+</div>
+
+
+<div>
+
+<h4>
+Navegação
+</h4>
+
+<ul>
+
+<li>
+<a href="#empresa">
+Empresa
+</a>
+</li>
+
+<li>
+<a href="#servicos">
+Serviços
+</a>
+</li>
+
+<li>
+<a href="#crc">
+CRC
+</a>
+</li>
+
+<li>
+<a href="#contato">
+Contato
+</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>
+Informações
+</h4>
+
+<ul>
+
+<li>
+Ariquemes — RO
+</li>
+
+<li>
+(69) 99343-5588
+</li>
+
+<li>
+a7contabilidadedigital@gmail.com
+</li>
+
+<li>
+CRC-RO: RO-000755/O
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<span>
+© <span id="year"></span>
+A7 Contabilidade.
+Todos os direitos reservados.
+</span>
+
+<span>
+CRC-RO • RO-000755/O
+</span>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+class="whatsapp"
+href="https://wa.me/5569993435588"
+target="_blank"
+aria-label="WhatsApp">
+
+☎
+
+</a>
+
+
+<script>
+
+/* MENU MOBILE */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const menu =
+document.getElementById("menu");
+
+menuBtn.addEventListener("click",function(){
+
+menu.classList.toggle("active");
+
+});
+
+
+document
+.querySelectorAll("#menu a")
+.forEach(function(link){
+
+link.addEventListener("click",function(){
+
+menu.classList.remove("active");
+
+});
+
+});
+
+
+/* ANO AUTOMÁTICO */
+
+document.getElementById("year")
+.textContent =
+new Date().getFullYear();
+
+
+/* FORMULÁRIO PARA WHATSAPP */
+
+document
+.getElementById("contactForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const nome =
+document.getElementById("nome").value;
+
+const telefone =
+document.getElementById("telefone").value;
+
+const email =
+document.getElementById("email").value;
+
+const assunto =
+document.getElementById("assunto").value;
+
+const mensagem =
+document.getElementById("mensagem").value;
+
+
+const texto =
+
+`Olá, A7 Contabilidade!
+
+Nome: ${nome}
+WhatsApp: ${telefone}
+E-mail: ${email || "Não informado"}
+Assunto: ${assunto || "Não informado"}
+
+Mensagem:
+${mensagem || "Não informada"}`;
+
+
+window.open(
+"https://wa.me/5569993435588?text="
++
+encodeURIComponent(texto),
+"_blank"
+);
+
+});
+
+</script>
+
+</body>
+</html>
+```
